@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>实现一个tab</title>
+	<style type="text/css">
+	ul{
+		font:14px "微软雅黑";
+		margin:0;
+		padding:0;
+		width:574px;
+		height:40px;
+		line-height:40px;
+		text-align:center;
+		background-color:#f1f1f1;
+		display:flex;
+		justify-content:space-around;
+	}
+	li{
+		width:500px;
+		border:1px solid #cecece;
+		display:inline-block;
+	}
+	div{
+		font:14px "微软雅黑";
+		margin:0;
+		padding:20px;
+		width:532px;
+		background-color:white;
+		display:none;
+	}
+	.body{
+		width:574px;
+		padding:0;
+		border:1px solid #999;
+		display:block;
+	}
+
+	/*选中时候的状态*/
+	.select1{
+		background-color:white;
+		border-bottom:none;
+	}
+	.select2{
+		display:block;
+		height:80px;
+	}
+	</style>
+</head>
+<body>
+<div class="body">
+<ul class="tabtitle">
+    <li id="a1" class="select1">课程</li>
+    <li id="a2">学习计划</li>
+    <li id="a3">技能图谱</li>
+</ul>
+<div id="b1" class="select2">课程内容</div>
+<div id="b2">学习计划内容</div>
+<div id="b3">技能图谱内容</div>
+</div>
+</body>
+</html>
